@@ -1,0 +1,105 @@
+<body>
+  <style>
+    body{
+      background-color: #111827;
+    }
+      form {
+          /* Center the form on the page */
+          margin: 0 auto;
+          width: 400px;
+          /* Form outline */
+          padding: 1em;
+          border: 1px solid #CCC;
+          border-radius: 1em;
+          background-color: #111827;
+          color: aliceblue;
+        font-family:
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+      }
+
+    </style>
+
+<form class="form-horizontal">
+    <fieldset>
+    
+    <!-- Form Name -->
+    <legend>Host application</legend>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="discord_username">Discord Username (with tag)</label>  
+      <div class="col-md-4">
+      <input id="discord_username" name="discord_username" type="text" placeholder="viking#7944" class="form-control input-md" required="">
+        
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="callsign">Callsign</label>  
+      <div class="col-md-4">
+      <input id="callsign" name="callsign" type="text" placeholder="Eurad" class="form-control input-md" required="">
+        
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="flight_time">Flight mins</label>  
+      <div class="col-md-4">
+      <input id="flight_time" name="flight_time" type="text" placeholder="6,900 mins" class="form-control input-md" required="">
+        
+      </div>
+    </div>
+    
+    <!-- Select Basic -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="rank">Rank</label>
+      <div class="col-md-4">
+        <select id="rank" name="rank" class="form-control">
+          <option value="Airman_Basic">[E-1] Airman Basic</option>
+          <option value="Airman">[E-2] Airman</option>
+          <option value="Airman_First_Class">[E-3] Airman First Class</option>
+          <option value="Senior_Airman">[E-4] Senior Airman</option>
+          <option value="Staff_Sergeant">[E-5] Staff Sergeant</option>
+          <option value="Technical_Sergeant">[E-6] Technical Sergeant</option>
+          <option value="Master_Sergeant">[E-7] Master Sergeant</option>
+          <option value="Senior_Master_Sergeant">[E-8] Senior Master Sergeant</option>
+          <option value="Chief_Master_Sergeant">[E-9] Chief Master Sergeant</option>
+          <option value="Command_Chief_Master_Sergeant">[E-10] Command Chief Master Sergeant</option>
+          <option value="Chief_Master_Sergeant_of_MAR">[E-MAR] Chief Master Sergeant of MAR</option>
+          <option value="2nd_Lieutenant">[O-1] 2nd Lieutenant</option>
+          <option value="1st_Lieutenant">[O-2] 1st Lieutenant</option>
+          <option value="Captain">[O-3] Captain</option>
+          <option value="Major">[O-4] Major</option>
+          <option value="Lieutenant_Colonel">[O-5] Lieutenant Colonel</option>
+          <option value="Colonel">[O-6] Colonel</option>
+          <option value="Brigadier_General">[O-7] Brigadier General</option>
+          <option value="Major_General">[O-8] Major General</option>
+          <option value="Lieutenant_General">[O-9] Lieutenant General</option>
+          <option value="General">[O-10] General</option>
+          <option value="General_of_MAR">[O-MAR] General of MAR</option>
+        </select>
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="timezone">Timezone</label>  
+      <div class="col-md-4">
+      <input id="timezone" name="timezone" type="text" placeholder="GMT+1" class="form-control input-md" required="">
+        
+      </div>
+    </div>
+    <button id="submit" type="button" class="btn" id="btn">Submit</button>
+    </fieldset>
+    </form>
+</body>
